@@ -29,7 +29,7 @@ git clone https://github.com/devraza/dianciemacs .
 Those using Linux or MacOS should replace the first command with `cd /home/<USERNAME>/.emacs.d`.
 
 #### License
-DianciEmacs is licensed under the GNU GPL v3, (Emacs is made by GNU, so a GNU license seemed fitting) to 'ensure that every user has freedom' (copyleft) <br>
+DianciEmacs is licensed under the GNU GPL v3, (Emacs is made by GNU, so a GNU license seemed fitting) <br> to 'ensure that every user has freedom' (copyleft)
 and to prevent unauthorized copying. 
 
 #### Maintainers
