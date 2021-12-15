@@ -11,7 +11,7 @@
 (setq initial-scratch-message "Welcome to DianciEmacs")
 
 (load (concat (file-name-directory load-file-name)
-	      "keybindings.el")
+	      "custom-functions.el")
       nil (not init-file-debug))
 
 (require 'package)

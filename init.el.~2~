@@ -10,10 +10,6 @@
 (setq default-fill-column 100)
 (setq initial-scratch-message "Welcome to DianciEmacs")
 
-(load (concat (file-name-directory load-file-name)
-	      "keybindings.el")
-      nil (not init-file-debug))
-
 (require 'package)
 (setq package-enable-at-startup nil)
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
@@ -27,5 +23,14 @@
 (use-package general :ensure t)
 
 (custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(package-selected-packages (quote (general use-package))))
-(custom-set-faces)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
