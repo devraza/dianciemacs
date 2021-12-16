@@ -1,5 +1,5 @@
 ## DianciEmacs
-An elegant, *sparkling* Emacs distribution. Open-source, and licensed under the GNU GPL v3.
+An elegant, *shimmering* Emacs distribution. Open-source, and licensed under the GNU GPL v3.
 
 #### What It's About
 DianciEmacs is created with the intent of providing a simple, clean, and efficient Emacs distribution.
