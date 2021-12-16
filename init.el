@@ -26,6 +26,29 @@
 (require 'use-package)
 (use-package general :ensure t)
 
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(load-file "~/.emacs.d/themes/dracula-theme.el")
+
+(defun always-use-fancy-splash-screens-p () 1)
+  (defalias 'use-fancy-splash-screens-p 'always-use-fancy-splash-screens-p)
+
 (custom-set-variables
- '(package-selected-packages (quote (general use-package))))
-(custom-set-faces)
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#282a36" "#ff5555" "#50fa7b" "#f1fa8c" "#6272a4" "#bd93f9" "#8be9fd" "#f8f8f2"])
+ '(custom-enabled-themes nil)
+ '(custom-safe-themes
+   (quote
+    ("18bec4c258b4b4fb261671cf59197c1c3ba2a7a47cc776915c3e8db3334a0d25" "1e635c22c23dbc541c395746b4846b8c4549d7157e1fe8b382278ab5b6d51ed5" default)))
+ '(inhibit-startup-screen t)
+ '(initial-buffer-choice "~/.emacs.d/README.org")
+ '(package-selected-packages (quote (org general use-package))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
