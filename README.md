@@ -1,5 +1,5 @@
 ## DianciEmacs
-An elegant, *sparkling* Emacs distribution. Open-source, and licensed under the GNU GPL v3.
+An elegant, *shimmering* Emacs distribution. Open-source, and licensed under the GNU GPL v3.
 
 #### What It's About
 DianciEmacs is created with the intent of providing a simple, clean, and efficient Emacs distribution.
@@ -30,7 +30,7 @@ Those using Linux or MacOS should replace the first command with `cd /home/<USER
 
 #### Keybinds
 DianciEmacs has the following keybinds as of the time of writing. Keep in mind, Emacs' default keybinds will be kept, <br>
-since we're 'decreasing the vast learning curve of Emacs as much as possible', as mentioned above in the [What It's About](#what-it's-about) section.
+since we're 'decreasing the vast learning curve of Emacs as much as possible', as mentioned above in the [What It's About](#what-its-about) section.
 ```
 Copy			C-S-c (Ctrl+Shift+C)
 Paste			C-S-v (Ctrl+Shift+V)
