@@ -1,3 +1,0 @@
-(global-set-key (kbd "C-S-k") 'kill-whole-line)
-(global-set-key (kbd "C-S-c") 'kill-ring-save . 'set-mark-command)
-(global-set-key (kbd "C-S-v") 'yank)

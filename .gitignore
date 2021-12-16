@@ -1,0 +1,4 @@
+*.el.*
+*.md.*
+auto-save-list/
+elpa/

@@ -1,2 +1,0 @@
-(global-set-key custom-kill-whole-line (kbd "C-S-k"))
-(define-key (current-global-map) [remape-kill-line] 'custom-kill-whole-line)

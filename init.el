@@ -7,7 +7,7 @@
 (setq coding-system-for-read 'utf-8)
 (setq coding-system-write 'utf-8)
 (setq sentence-end-double-space nil)
-(setq default-fill-column 100)
+(setq default-fill-column 80)
 (setq initial-scratch-message "Welcome to DianciEmacs")
 
 (load (concat (file-name-directory load-file-name)

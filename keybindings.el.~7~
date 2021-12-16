@@ -1,7 +1,0 @@
-(global-set-key (kbd "C-S-k") 'kill-whole-line)
-(defun copy-return-start ()
-  (interactive)
-  (global-set-key (kbd "C-S-c") 'kill-ring-save)
-  ('set-mark-command)
-;; (global-set-key (kbd "C-S-c") 'kill-ring-save)
-(global-set-key (kbd "C-S-v") 'yank)
