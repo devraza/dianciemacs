@@ -24,8 +24,8 @@ DianciEmacs focuses on the following aspects:
 - Simple (decreasing the vast learning curve of Emacs as much as possible)
 
 #### Development
-DianciEmacs is in it's very first stages of development. As of the time
-of writing, it doesn't differ much to vanilla Emacs. I'll be
+DianciEmacs is in an early-ish version of development. More is to come, but
+as of the time of writing, it comes with a few improvements to Emacs. I'll be
 constantly updating this README accordingly with the development
 progress.
 
