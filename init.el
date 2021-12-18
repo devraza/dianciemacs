@@ -27,7 +27,7 @@
 (use-package general :ensure t)
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(load-theme 'dracula)
+(load-theme 'dracula t)
 
 (defun always-use-fancy-splash-screens-p () 1)
   (defalias 'use-fancy-splash-screens-p 'always-use-fancy-splash-screens-p)
