@@ -23,34 +23,8 @@ should be beautiful, which means the addition of themes) - Efficient
 (provides the tools necessary to do tasks faster) - Simple (decreasing
 the vast learning curve of Emacs as much as possible)
 
-**** Development
-DianciEmacs is in it's very first stages of development. As of the time
-of writing, it doesn't differ much to vanilla Emacs. I'll be constantly
-updating this README accordingly with the development progress.
-
-**** Installing
-The installation process is extremely simple: just clone the repository
-to your =.emacs.d= folder, as instructed below.
-
-#+begin_quote
-  Make sure git is installed before doing any of this
-  (=scoop install git=, =brew install git=, =sudo apt-get install git=,
-  etc.) Remember to replace =<USERNAME>= with your username too!
-#+end_quote
-
-Open up your preferred choice of terminal, and type in the following
-commands:
-
-#+begin_example
-  cd C:/Users/<USERNAME>/.emacs.d/
-  git clone https://github.com/devraza/dianciemacs .
-#+end_example
-
-Those using Linux or MacOS should replace the first command with
-=cd /home/<USERNAME>/.emacs.d=.
-
-**** Keybinds
-DianciEmacs has the following keybinds as of the time of writing. Keep
+**** Keybindings
+DianciEmacs has the following keybindings as of the time of writing. Keep
 in mind, Emacs' default keybinds will be kept, since we're 'decreasing
 the vast learning curve of Emacs as much as possible', as mentioned
 above in the [[#what-its-about][What It's About]] section.
@@ -74,4 +48,3 @@ commit, and make a pull request.
 
 **** Acknowledgements
 DianciEmacs utilises the [[https://github.com/dracula/][Dracula theme]].
-  
