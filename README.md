@@ -2,17 +2,7 @@
 An elegant, *shimmering* Emacs distribution. Open-source, and licensed
 under the GNU GPL v3.
 
-
-<style type="text/css">
-@import url("https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono|Ubuntu+Mono|Cutive+Mono");
-pre{
-display: inline-block;
-font-size: 7px;
-text-align: center;
-font-family: Ubuntu Mono, monospace !important;
-text-rendering: optimizeSpeed;
-}
-</style>
+<p style="display:inline-block; font-size:5px; text-align:center;">
 <pre style="font-size: 10px; font-family: monospace; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); line-height: 10px;">                                               -.-``						   ---__--_~*~_-.``.--                                               
                                                ~:_~:` `--..~""_` ~"~-~~                                               
                                             `` -*"-`,*-`      `~*~""^*- ``                                            
@@ -76,6 +66,7 @@ text-rendering: optimizeSpeed;
                                                          `~`                                                          </pre>
 
 
+</p>
 
 #### What It's About
 DianciEmacs is created with the intent of providing a simple, clean, and
