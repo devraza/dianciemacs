@@ -32,6 +32,8 @@
 (defun always-use-fancy-splash-screens-p () 1)
   (defalias 'use-fancy-splash-screens-p 'always-use-fancy-splash-screens-p)
 
+(add-hook 'text-mode-hook 'read-only-mode)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -39,14 +41,14 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
    ["#282a36" "#ff5555" "#50fa7b" "#f1fa8c" "#6272a4" "#bd93f9" "#8be9fd" "#f8f8f2"])
+ '(buffer-read-only t t)
  '(custom-enabled-themes (quote (dracula)))
  '(custom-safe-themes
    (quote
     ("18bec4c258b4b4fb261671cf59197c1c3ba2a7a47cc776915c3e8db3334a0d25" "1e635c22c23dbc541c395746b4846b8c4549d7157e1fe8b382278ab5b6d51ed5" default)))
  '(inhibit-startup-screen t)
- '(initial-buffer-choice "~/.emacs.d/README.md")
- '(package-selected-packages (quote (org general use-package)))
- '(read-only-mode t))
+ '(initial-buffer-choice "~/.emacs.d/README.org")
+ '(package-selected-packages (quote (org general use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
