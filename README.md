@@ -1,8 +1,10 @@
+<p style="text-align:center;">
+  <img style="width: 300px;" src="./diancie.png">
+</p>
+
 ## DianciEmacs
 An elegant, *shimmering* Emacs distribution. Open-source, and licensed
 under the GNU GPL v3.
-
-<img style="width: 300px;" src="./diancie.png">
 
 #### What It's About
 DianciEmacs is created with the intent of providing a simple, clean, and
