@@ -67,4 +67,5 @@ freedom of contributing to this repository. Simply fork this repo,
 commit, and make a pull request.
 
 **** Acknowledgements
-DianciEmacs is created with the [Dracula theme](https://github.com/dracula/)
+DianciEmacs utilises the [[https://github.com/dracula/][Dracula theme]].
+  
