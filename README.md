@@ -60,7 +60,7 @@ Delete Whole Line   C-S-k (Ctrl+Shift+K)
 
 #### License
 DianciEmacs is licensed under the GNU GPL v3, (Emacs is made by GNU, so
-a GNU license seemed fitting) to 'ensure that every user has freedom\
+a GNU license seemed fitting) to ensure that every user has freedom
 (copyleft) and to prevent unauthorized copying.
 
 #### Maintainers
