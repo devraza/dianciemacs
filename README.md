@@ -2,9 +2,9 @@
 An elegant, *shimmering* Emacs distribution. Open-source, and licensed
 under the GNU GPL v3.
 
-<p style="display:inline-block; font-size:5px; text-align:center;">
+<p style="display:inline-block; font-size:2px; text-align:center;">
 <pre style="font-size: 10px; font-family: monospace; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); line-height: 10px;">                                               -.-``						   ---__--_~*~_-.``.--                                               
-                                               ~:_~:` `--..~""_` ~"~-~~                                               
+                                               ~:_~:``--..~""_` ~"~-~~                                               
                                             `` -*"-`,*-`      `~*~""^*- ``                                            
                                            `;:-.~~` _,`       ``~_.."~.-~_                                            
                                             `;;_:*._\~`` `````.-^"~;".-;~                                             
