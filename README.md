@@ -1,4 +1,4 @@
-<p style="text-align:center;">
+<p align="center">
   <img style="width: 300px;" src="./diancie.png">
 </p>
 
