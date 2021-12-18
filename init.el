@@ -14,17 +14,10 @@
 	      "keybindings.el")
       nil (not init-file-debug))
 
-(require 'package)
 (setq package-enable-at-startup nil)
 (setq package-archives '(("gnu" . "https://elpa.gnu.org/packages/")
 			 ("org" . "http://orgmode.org/elpa/")
 			 ("melpa" . "https://melpa.org/packages/")))
-(package-initialize)
-(unless (package-installed-p 'use-package)
-  (package-refresh-contents)
-  (package-install 'use-package))
-(require 'use-package)
-(use-package general :ensure t)
 
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 (load-theme 'dracula t)
