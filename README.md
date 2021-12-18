@@ -30,24 +30,21 @@ constantly updating this README accordingly with the development
 progress.
 
 #### Installing
-The installation process is extremely simple: just clone the repository
+The installation process is simple: just clone the repository
 to your `.emacs.d` folder, as instructed below.
 
 > Make sure git is installed before doing any of this
 > (`scoop install git`, `brew install git`,
-> `sudo apt-get install git`, etc.) Remember to replace
-> `<USERNAME>` with your username too!
+> `sudo apt-get install git`, etc.)
 
-Open up your preferred choice of terminal, and type in the following
+> Make sure you don't already have a `.emacs.d` folder too!
+
+Open up your preferred terminal emulator, and type in the following
 commands:
 
 ```
-cd C:/Users/<USERNAME>/.emacs.d/
-git clone https://github.com/devraza/dianciemacs .
+git clone https://github.com/devraza/dianciemacs ~/.emacs.d/
 ```
-
-Those using Linux or MacOS should replace the first command with
-`cd /home/<USERNAME>/.emacs.d`.
 
 #### Keybindings
 DianciEmacs has the following keybindings as of the time of writing. Keep
