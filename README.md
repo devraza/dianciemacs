@@ -1,12 +1,9 @@
 <p align="center" style="padding:0;">
   <img style="width: 350px; margin-bottom:0;" src="./diancie.png">
-  <h3 style="margin-top:0;" align="center">
-    ░█▀▄░█▒▄▀▄░█▄░█░▄▀▀░█▒██▀░█▄▒▄█▒▄▀▄░▄▀▀░▄▀▀
-    ▒█▄▀░█░█▀█░█▒▀█░▀▄▄░█░█▄▄░█▒▀▒█░█▀█░▀▄▄▒▄██
-  </h3>
+  <h1 style="margin-top:0; padding-top: 0;" align="center">
+    Dianciemacs
+  </h1>
 </p>
-
----
 
 An elegant, *shimmering* Emacs distribution. Open-source, and licensed
 under the GNU GPL v3.
