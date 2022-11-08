@@ -6,12 +6,13 @@
 ;; Disable the modeline. Done in this file for the same reason above
 (setq-default mode-line-format nil)
 
+;; Define the leader-key to use.
 (defconst leader-key "SPC")
 
 ;; Straight.el bootstrap
 (defvar bootstrap-version)
 (let ((bootstrap-file
-       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory))
+       (expand-file-name "straight/repos/straight.el/bootstrap.el" user-emacs-directory)) ;
       (bootstrap-version 6))
   (unless (file-exists-p bootstrap-file)
     (with-current-buffer
