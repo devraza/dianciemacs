@@ -35,6 +35,9 @@
 (straight-use-package 'use-package)
 (setq straight-use-package-by-default t)
 
+;; Disable the creation of files ending with '~'
+(setq make-backup-files nil)
+
 ;; Install the Doom Emacs theme megapack.
 (use-package doom-themes
   :ensure t
