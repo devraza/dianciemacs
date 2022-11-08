@@ -5,4 +5,5 @@ elpa/
 transient/
 
 .last-package-update-day
+.org-roam.db
 .org-id-locations
