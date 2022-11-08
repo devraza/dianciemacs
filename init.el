@@ -14,7 +14,6 @@
 
 ;; Add the melpa package repository and initialize package repositories
 (require 'package)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
 ;; Straight.el bootstrap
@@ -64,6 +63,10 @@
   (setq auto-package-update-delete-old-versions t)
   (setq auto-package-update-hide-results t)
   (auto-package-update-maybe))
+
+;; Programming languages configuration
+;; Rust
+
 
 ;; Custom variables set by user
 (custom-set-variables
