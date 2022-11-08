@@ -3,9 +3,6 @@
 ;; Stop Emacs from resizing the window at startup
 (setq frame-resize-pixelwise t)
 
-;; Disable the modeline
-(setq-default mode-line-format nil)
-
 ;; Remove the startup screen
 (setq inhibit-startup-message t)
 

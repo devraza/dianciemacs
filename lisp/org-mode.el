@@ -1,11 +1,5 @@
 ;;; This file contains configuration for Emacs' org-mode
 
-;; Enable org-superstar-mode in org-mode files
-(add-hook 'org-mode-hook (lambda() (org-superstar-mode 1)))
-
-;; Scale up latex elements
-(plist-put org-format-latex-options :scale 1.75)
-
 ;; Customize org-mode's default functionality
 (setq org-ellipsis "..."
       org-use-property-inheritance t
@@ -37,5 +31,11 @@
                     :foreground 'unspecified
                     :inherit 'org-level-8)
 
+;; Scale up latex elements
+(plist-put org-format-latex-options :scale 1.75)
+
+;; Enable org-superstar-mode in org-mode files
+(add-hook 'org-mode-hook 'org-superstar-mode)
+
 ;; Provide this file to init.el
-(provide 'org)
+(provide 'org-mode)

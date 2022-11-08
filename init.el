@@ -3,6 +3,9 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
+;; Disable the modeline. Done in this file for the same reason above
+(setq-default mode-line-format nil)
+
 ;; Straight.el bootstrap
 (defvar bootstrap-version)
 (let ((bootstrap-file
@@ -29,5 +32,5 @@
 
 (require 'interface)
 (require 'packages)
+(require 'org-mode)
 (require 'editor)
-(require 'org)
