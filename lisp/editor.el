@@ -4,8 +4,22 @@
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
 ;;; evil - A Vi Layer inside of Emacs
-(evil-collection-init) ; Enable the evil-collection keybinds
-(evil-mode 1) ; Enable evil
+(use-package evil
+  :init
+  (setq evil-want-keybinding nil ; Make room for evil-collection
+	evil-want-integration t ; Same as above
+	evil-undo-system 'undo-fu) ; Set the undo/redo system
+  :config
+  (evil-mode 1))
+
+;; evil-collection - a collection of keybindings for evil-mode
+(use-package evil-collection
+  :after evil ; In order to recognize evil-want-... being set
+  :init
+  (evil-collection-init)) ; Enable the evil-collection keybinds
+
+;; undo-fu, used by evil for undo/redo functionality
+(use-package undo-fu)
 
 ;; Disable the creation of files ending with '~' (backup files)
 (setq make-backup-files nil)

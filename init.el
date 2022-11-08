@@ -32,7 +32,6 @@
         (convert-standard-filename "lisp/")))
 
 ;; Load the code of some external files
-(require 'packages)
 (require 'interface)
 (require 'editor)
 (require 'org-mode)

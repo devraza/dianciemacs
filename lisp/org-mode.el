@@ -1,5 +1,13 @@
 ;;; This file contains configuration for Emacs' org-mode
 
+;;; org-mode
+;; org-superstar
+(use-package org-superstar
+  :config
+  ;; Change org-mode's heading bullets
+  (setq org-superstar-headline-bullets-list
+	'("🞉" "🞈" "🞇" "🞆" "🞅" "🞄")))
+
 ;; Customize org-mode's default functionality
 (setq org-ellipsis "..."
       org-use-property-inheritance t
@@ -12,10 +20,6 @@
       org-pretty-entities t
       org-hide-leading-stars t
       org-adapt-indentation t)
-
-;; Change org-mode's heading bullets
-(setq org-superstar-headline-bullets-list
-      '("🞉" "🞈" "🞇" "🞆" "🞅" "🞄"))
 
 ;; Faces for the font sizes of org-mode headings
 (set-face-attribute 'org-level-8 nil :weight 'bold :inherit 'default)

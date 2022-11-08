@@ -20,5 +20,25 @@
   (set-face-foreground face (face-attribute 'default :background)))
 (set-face-background 'fringe (face-attribute 'default :background))
 
+;; magit - A beautiful git porcelain for Emacs
+(use-package magit)
+
+;; which-key - a popup which displays available keybindings
+(use-package which-key)
+
+;;; Themes
+;; Install the Doom Emacs theme megapack.
+(use-package doom-themes)
+  
+;; kaolin-themes, depends on autothemer
+(use-package kaolin-themes
+  :requires autothemer)
+
+;; autothemer - conveniently create Emacs themes
+(use-package autothemer)
+
+;; all-the-icons - Icons for various UI elements
+(use-package all-the-icons)
+
 ;; Provide this file to init.el
 (provide 'interface)
