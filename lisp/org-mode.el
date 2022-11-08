@@ -41,5 +41,29 @@
 ;; Enable org-superstar-mode in org-mode files
 (add-hook 'org-mode-hook 'org-superstar-mode)
 
+;;; org-roam - A plain-text personal knowledge management system
+(use-package org-roam
+  :custom
+  (org-directory file-truename "Org/") ; Set the folder used by org-mode
+  (org-roam-directory (file-truename "Org/Roam/")) ; Set the folder used by org-roam
+  (org-roam-databse-connector 'sqlite3)
+  :init
+  (org-roam-db-autosync-mode 1)) ; Automatically sync nodes
+
+(setq org-roam-capture-templates
+      '(("d" "default" plain
+         "\n%?"
+        :if-new (file+head "${slug}.org" "#+title: ${title}\n#+date: %U\n#+author: %n\n")
+        :unnarrowed t)))
+
+;; Keybinds for org-mode
+(general-create-definer diancite/org
+			:prefix leader-key)
+
+(diancite/org
+ :keymaps 'normal
+ "n r" '(org-roam-node-find :wk "Find Nodes")
+ "n a" '(org-table-align :wk "Align Table"))
+
 ;; Provide this file to init.el
 (provide 'org-mode)

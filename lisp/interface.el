@@ -40,5 +40,13 @@
 ;; all-the-icons - Icons for various UI elements
 (use-package all-the-icons)
 
+;; vertico - An amazing search engine!
+(use-package vertico
+  :init
+  (vertico-mode 1))
+
+(use-package diredfl ; Colourise dired!
+  :hook dired-mode)
+
 ;; Provide this file to init.el
 (provide 'interface)

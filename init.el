@@ -6,6 +6,8 @@
 ;; Disable the modeline. Done in this file for the same reason above
 (setq-default mode-line-format nil)
 
+(defconst leader-key "SPC")
+
 ;; Straight.el bootstrap
 (defvar bootstrap-version)
 (let ((bootstrap-file

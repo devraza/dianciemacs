@@ -3,20 +3,16 @@
 ;; Quit input dialogues after pressing escape once
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
+;;; Line Wrapping
+(global-visual-line-mode 1) ; Prevent wrapping of words
+
 ;;; evil - A Vi Layer inside of Emacs
 (use-package evil
-  :init
-  (setq evil-want-keybinding nil ; Make room for evil-collection
-	evil-want-integration t ; Same as above
-	evil-undo-system 'undo-fu) ; Set the undo/redo system
+  :custom
+  (evil-want-integration t) ; Same as above
+  (evil-undo-system 'undo-fu) ; Set the undo/redo system
   :config
   (evil-mode 1))
-
-;; evil-collection - a collection of keybindings for evil-mode
-(use-package evil-collection
-  :after evil ; In order to recognize evil-want-... being set
-  :init
-  (evil-collection-init)) ; Enable the evil-collection keybinds
 
 ;; undo-fu, used by evil for undo/redo functionality
 (use-package undo-fu)
@@ -39,6 +35,24 @@
 (which-key-mode)
 (setq which-key-idle-delay 0.1) ; Make the popup appear faster
 (setq which-key-separator " - " ) ; Change the seperator which-key uses
+
+;; general - More convenient key definitions for Emacs
+(use-package general
+  :config
+  (general-evil-setup t)
+  :init
+  (general-create-definer diancite/leaders
+			  :prefix "SPC"))
+
+(diancite/leaders
+ :keymaps 'normal
+ "f" '(:which-key "File")
+ "n" '(:which-key "Org")
+ "m" '(:which-key "Magit")
+ "w" '(:which-key "Evil")
+ "p" '(:which-key "Projects"))
+
+(set-face-foreground 'vertical-border (face-background 'default))
 
 ;; Provide this file to init.el
 (provide 'editor)
