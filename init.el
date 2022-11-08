@@ -52,6 +52,17 @@
 ;; Set theme to doom-tokyo-night, Dianicemacs' default
 (load-theme 'doom-tokyo-night t)
 
+;; A nice border around Emacs
+(modify-all-frames-parameters
+ '((right-divider-width . 15)
+   (internal-border-width . 15)))
+(dolist (face '(window-divider
+                window-divider-first-pixel
+                window-divider-last-pixel))
+  (face-spec-reset-face face)
+  (set-face-foreground face (face-attribute 'default :background)))
+(set-face-background 'fringe (face-attribute 'default :background))
+
 ;; Vi layer inside of Emacs
 ;; undo-fu, used by evil for undo/redo functionality
 (use-package undo-fu
@@ -84,12 +95,48 @@
 	doom-modeline-modal-icon t
 	doom-modeline-buffer-file-name-style 'file-name))
 
+;; A beautiful git porcelain inside of Emacs
 (use-package magit
   :ensure t)
 
 ;; Icons for various UI elements
 (use-package all-the-icons
   :ensure t)
+
+;; Org Mode
+(use-package org-superstar
+  :ensure t
+  :init (add-hook 'org-mode-hook (lambda() (org-superstar-mode 1)))
+  :config
+  (setq org-superstar-headline-bullets-list
+	'("🞉" "🞈" "🞇" "🞆" "🞅" "🞄"))
+  (set-face-attribute 'org-level-8 nil :weight 'bold :inherit 'default)
+  (set-face-attribute 'org-level-7 nil :inherit 'org-level-8)
+  (set-face-attribute 'org-level-6 nil :inherit 'org-level-8)
+  (set-face-attribute 'org-level-5 nil :inherit 'org-level-8)
+  (set-face-attribute 'org-level-4 nil :inherit 'org-level-8)
+  (set-face-attribute 'org-level-3 nil :inherit 'org-level-8 :height 1.15)
+  (set-face-attribute 'org-level-2 nil :inherit 'org-level-8 :height 1.35)
+  (set-face-attribute 'org-level-1 nil :inherit 'org-level-8 :height 1.65)
+  (set-face-attribute 'org-document-title nil
+                      :height 1.85
+                      :foreground 'unspecified
+                      :inherit 'org-level-8))
+
+;; Customize Org mode
+(setq org-ellipsis "..."
+      org-use-property-inheritance t
+      org-list-allow-alphabetical t
+      org-catch-invisible-edits 'smart
+      org-startup-indented t
+      org-hide-emphasis-markers t
+      org-startup-with-inline-images t
+      org-image-actual-width '(300)
+      org-pretty-entities t
+      org-hide-leading-stars t
+      org-adapt-indentation t)
+
+(plist-put org-format-latex-options :scale 1.75)
 
 ;; Programming languages configuration
 ;; Rust
