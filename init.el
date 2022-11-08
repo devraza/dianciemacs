@@ -53,8 +53,15 @@
 (load-theme 'doom-tokyo-night t)
 
 ;; Vi layer inside of Emacs
+;; undo-fu, used by evil for undo/redo functionality
+(use-package undo-fu
+  :ensure t)
+
 (use-package evil
-  :config
+  :requires undo-fu
+  :ensure t
+  :init
+  (setq evil-undo-system 'undo-fu)
   (evil-mode 1))
 
 ;; Keep packages up to date
@@ -64,20 +71,25 @@
   (setq auto-package-update-hide-results t)
   (auto-package-update-maybe))
 
+;; Modeline - doom-modeline
+(use-package doom-modeline
+  :ensure t
+  :init (doom-modeline-mode 1)
+  :config
+  (setq doom-modeline-height 25
+	doom-modeline-bar-width 0
+	doom-modeline-project-detection 'auto
+	doom-modeline-buffer-encoding nil
+	doom-modeline-modal t
+	doom-modeline-modal-icon t
+	doom-modeline-buffer-file-name-style 'file-name))
+
+(use-package magit
+  :ensure t)
+
+;; Icons for various UI elements
+(use-package all-the-icons
+  :ensure t)
+
 ;; Programming languages configuration
 ;; Rust
-
-
-;; Custom variables set by user
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages '(use-package)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
