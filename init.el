@@ -24,13 +24,16 @@
 (straight-use-package 'use-package)
 (setq straight-use-package-by-default t)
 
-;; Disable the creation of files ending with '~'
-(setq make-backup-files nil)
+;; Always make sure packages are installed to the system
+(setq use-package-always-ensure t)
 
+;; Add external e-lisp files to the load-path
 (add-to-list 'load-path (concat user-emacs-directory
         (convert-standard-filename "lisp/")))
 
-(require 'interface)
+;; Load the code of some external files
 (require 'packages)
-(require 'org-mode)
+(require 'interface)
 (require 'editor)
+(require 'org-mode)
+(require 'performance)
