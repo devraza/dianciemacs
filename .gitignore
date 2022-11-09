@@ -6,5 +6,5 @@ transient/
 
 bookmarks
 .last-package-update-day
-.org-roam.db
+org-roam.db*
 .org-id-locations
