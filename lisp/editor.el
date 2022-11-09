@@ -42,15 +42,15 @@
   (general-evil-setup t)
   :init
   (general-create-definer diancite/leaders
-			  :prefix "SPC"))
+			  :prefix leader-key))
 
 (diancite/leaders
  :keymaps 'normal
- "f" '(:which-key "File")
- "n" '(:which-key "Org")
- "m" '(:which-key "Magit")
- "w" '(:which-key "Evil")
- "p" '(:which-key "Projects"))
+ "f" '(:wk "File")
+ "n" '(:wk "Org")
+ "m" '(:wk "Magit")
+ "w" '(:wk "Evil")
+ "p" '(:wk "Projects"))
 
 (set-face-foreground 'vertical-border (face-background 'default))
 

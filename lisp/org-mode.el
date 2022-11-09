@@ -4,9 +4,8 @@
 ;; org-superstar
 (use-package org-superstar
   :config
-  ;; Change org-mode's heading bullets
-  (setq org-superstar-headline-bullets-list
-	'("🞉" "🞈" "🞇" "🞆" "🞅" "🞄")))
+  ;; Change org-mode's heading bullets (setq org-superstar-headline-bullets-list
+	'("🞉" "🞈" "🞇" "🞆" "🞅" "🞄"))
 
 ;; Customize org-mode's default functionality
 (setq org-ellipsis "..."
@@ -46,7 +45,6 @@
   :custom
   (org-directory file-truename "Org/") ; Set the folder used by org-mode
   (org-roam-directory (file-truename "Org/Roam/")) ; Set the folder used by org-roam
-  (org-roam-databse-connector 'sqlite3)
   :init
   (org-roam-db-autosync-mode 1)) ; Automatically sync nodes
 
@@ -63,7 +61,7 @@
 (diancite/org
  :keymaps 'normal
  "n r" '(org-roam-node-find :wk "Find Nodes")
- "n a" '(org-table-align :wk "Align Table"))
+ "n s" '(org-roam-db-sync :wk "Sync Nodes"))
 
 ;; Provide this file to init.el
 (provide 'org-mode)

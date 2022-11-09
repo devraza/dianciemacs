@@ -38,4 +38,5 @@
 (require 'interface)
 (require 'editor)
 (require 'org-mode)
+(require 'keybinds)
 (require 'performance)
