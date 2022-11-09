@@ -9,10 +9,23 @@
 ;;; evil - A Vi Layer inside of Emacs
 (use-package evil
   :custom
+  (evil-want-keybinding nil) ; Make room for evil-collection
   (evil-want-integration t) ; Same as above
   (evil-undo-system 'undo-fu) ; Set the undo/redo system
   :config
   (evil-mode 1))
+
+;; evil-collection - A collection of keybinds for evil
+(use-package evil-collection
+  :custom (evil-collection-setup-minibuffer t)
+  :init (evil-collection-init))
+
+;; evil-escape - Escape from insert mode using jk
+(use-package evil-escape
+  :config
+  (setq-default evil-escape-key-sequence "jk")
+  :init
+  (evil-escape-mode 1))
 
 ;; undo-fu, used by evil for undo/redo functionality
 (use-package undo-fu)
