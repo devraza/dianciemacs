@@ -6,7 +6,7 @@
   :config
   ;; Change org-mode's heading bullets
   (setq org-superstar-headline-bullets-list
-	'("🞉" "🞈" "🞇" "🞆" "🞅" "🞄"))
+	'("🞉" "🞈" "🞇" "🞆" "🞅" "🞄")))
 
 ;; Customize org-mode's default functionality
 (setq org-ellipsis "..."
