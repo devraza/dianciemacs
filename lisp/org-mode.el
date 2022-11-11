@@ -57,8 +57,9 @@
 ;; evil-org - Some nice keybinds for org-mode and org-agenda
 (use-package evil-org
   :after org
-  :hook (org-mode . evil-org-mode)
   :config
+  (add-hook 'org-mode-hook 'evil-org-mode)
+  (add-hook 'org-agenda-mode-hook 'evil-org-mode)
   (require 'evil-org-agenda)
   (evil-org-agenda-set-keys))
 
