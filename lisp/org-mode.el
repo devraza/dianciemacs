@@ -1,7 +1,5 @@
 ;;; This file contains configuration for Emacs' org-mode
-
-;;; org-mode
-;; org-superstar
+;;; org-mode ;; org-superstar
 (use-package org-superstar
   :config
   ;; Change org-mode's heading bullets
@@ -55,14 +53,32 @@
         :if-new (file+head "${slug}.org" "#+title: ${title}\n#+date: %U\n#+author: %n\n")
         :unnarrowed t)))
 
-;; Keybinds for org-mode
+;;; Keybinds for org-mode
+;; evil-org - Some nice keybinds for org-mode and org-agenda
+(use-package evil-org
+  :after org
+  :hook (org-mode . evil-org-mode)
+  :config
+  (require 'evil-org-agenda)
+  (evil-org-agenda-set-keys))
+
 (general-create-definer diancite/org
-			:prefix leader-key)
+  :prefix leader-key)
 
 (diancite/org
  :keymaps 'normal
  "n r" '(org-roam-node-find :wk "Find Nodes")
  "n s" '(org-roam-db-sync :wk "Sync Nodes"))
+
+;; Agenda - manage your life with org-mode
+(general-create-definer diancite/org-agenda
+  :prefix leader-key)
+
+(diancite/org-agenda
+ :keymaps 'normal
+ "n a" '(org-agenda :wk "Agenda"))
+
+(setq org-agenda-files (quote ("~/Org")))
 
 ;; Provide this file to init.el
 (provide 'org-mode)
