@@ -69,7 +69,8 @@
 (diancite/org
  :keymaps 'normal
  "n r" '(org-roam-node-find :wk "Find Nodes")
- "n s" '(org-roam-db-sync :wk "Sync Nodes"))
+ "n s" '(org-roam-db-sync :wk "Sync Nodes")
+ "n c" '(org-todo :wk "Cycle Todo"))
 
 ;; Agenda - manage your life with org-mode
 (general-create-definer diancite/org-agenda
