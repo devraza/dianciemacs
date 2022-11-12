@@ -1,6 +1,6 @@
 ;; This file contains configuration for Emacs' org-mode
 
-;;; org-mode ;; org-superstar
+;; org-mode ;; org-superstar
 (use-package org-superstar
   :config
   ;; Change org-mode's heading bullets
@@ -40,7 +40,7 @@
 ;; Enable org-superstar-mode in org-mode files
 (add-hook 'org-mode-hook 'org-superstar-mode)
 
-;;; org-roam - A plain-text personal knowledge management system
+;; org-roam - A plain-text personal knowledge management system
 (use-package org-roam
   :custom
   (org-directory file-truename "Org/") ; Set the folder used by org-mode
@@ -54,7 +54,7 @@
         :if-new (file+head "${slug}.org" "#+title: ${title}\n#+date: %U\n#+author: %n\n")
         :unnarrowed t)))
 
-;;; Keybinds for org-mode
+;; Keybinds for org-mode
 ;; evil-org - Some nice keybinds for org-mode and org-agenda
 (use-package evil-org
   :after org

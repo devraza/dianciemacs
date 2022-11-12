@@ -29,7 +29,7 @@
 ;; which-key - a popup which displays available keybindings
 (use-package which-key)
 
-;;; Themes
+;; Themes
 ;; Install the Doom Emacs theme megapack.
 (use-package doom-themes)
   

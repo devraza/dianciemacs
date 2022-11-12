@@ -3,10 +3,10 @@
 ;; Quit input dialogues after pressing escape once
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
-;;; Line Wrapping
+;; Line Wrapping
 (global-visual-line-mode 1) ; Prevent wrapping of words
 
-;;; evil - A Vi Layer inside of Emacs
+;; evil - A Vi Layer inside of Emacs
 (use-package evil
   :custom
   (evil-want-keybinding nil) ; Make room for evil-collection
@@ -40,7 +40,7 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
-;;; Themes
+;; Themes
 ;; Customize doom-themes
 (setq doom-themes-enable-bold t
       doom-themes-enable-italic t)
@@ -50,7 +50,11 @@
 ;; Set theme to doom-tokyo-night, Dianicemacs' default
 (load-theme 'doom-tokyo-night t)
 
-;;; Keybinds
+;; rainbow-mode - Colourful colour codes!
+(use-package rainbow-mode
+  :hook (prog-mode . rainbow-mode))
+
+;; Keybinds
 ;; Enable which-key
 (which-key-mode)
 (setq which-key-idle-delay 0.1) ; Make the popup appear faster
