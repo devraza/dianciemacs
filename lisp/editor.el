@@ -33,6 +33,9 @@
 ;; Disable the creation of files ending with '~' (backup files)
 (setq make-backup-files nil)
 
+;; Disable the creation of files with '#' (lock files)
+(setq create-lockfiles nil)
+
 ;;; Themes
 ;; Customize doom-themes
 (setq doom-themes-enable-bold t
