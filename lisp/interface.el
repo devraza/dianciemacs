@@ -6,6 +6,9 @@
 ;; Remove the startup screen
 (setq inhibit-startup-message t)
 
+;; Disable the GTK dialog that appears when exiting without saving
+(setq use-dialog-box nil)
+
 ;; Enable line numbers globally
 (global-display-line-numbers-mode 1)
 

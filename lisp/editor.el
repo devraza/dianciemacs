@@ -34,7 +34,6 @@
 (setq make-backup-files nil)
 
 ;; Move files with '#' to system tmp directory
-(setq auto-save-default nil)
 (setq create-lockfiles nil)
 (setq backup-directory-alist
       `((".*" . ,temporary-file-directory)))
