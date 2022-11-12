@@ -41,3 +41,8 @@
 (load "keybinds")
 (load "performance")
 (load "language")
+
+;; Load user configuration
+(add-to-list 'load-path (concat user-emacs-directory
+        (convert-standard-filename "user/")))
+(load "init")
