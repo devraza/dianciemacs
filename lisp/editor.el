@@ -1,4 +1,4 @@
-;;; This file customizes Emacs' editor
+;; This file customizes Emacs' editor
 
 ;; Quit input dialogues after pressing escape once
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
@@ -74,6 +74,3 @@
  "p" '(:wk "Projects"))
 
 (set-face-foreground 'vertical-border (face-background 'default))
-
-;; Provide this file to init.el
-(provide 'editor)

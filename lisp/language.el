@@ -1,4 +1,4 @@
-;;; This file contains configuration for languages
+;; This file contains configuration for languages
 
 ;; Markdown
 (use-package markdown-mode)

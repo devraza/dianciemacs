@@ -1,4 +1,4 @@
-;;; This file contains configuration for Emacs interface elements.
+;; This file contains configuration for Emacs interface elements.
 
 ;; Stop Emacs from resizing the window at startup
 (setq frame-resize-pixelwise t)
@@ -47,6 +47,3 @@
 
 (use-package diredfl ; Colourise dired!
   :hook dired-mode)
-
-;; Provide this file to init.el
-(provide 'interface)

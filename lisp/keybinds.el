@@ -1,4 +1,4 @@
-;;; This file contains keybindings for Dianciemacs
+;; This file contains keybindings for Dianciemacs
 
 ;; Files
 (general-create-definer diancite/file
@@ -18,6 +18,3 @@
  "m s" '(magit-status :wk "Status")
  "m d" '(magit-dispatch :wk "Dispatch")
  "m f" '(magit-status :wk "File Dispatch"))
-
-;; Provide file file init.el
-(provide 'keybinds)

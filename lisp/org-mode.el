@@ -1,4 +1,5 @@
-;;; This file contains configuration for Emacs' org-mode
+;; This file contains configuration for Emacs' org-mode
+
 ;;; org-mode ;; org-superstar
 (use-package org-superstar
   :config
@@ -82,6 +83,3 @@
  "n a" '(org-agenda :wk "Agenda"))
 
 (setq org-agenda-files (quote ("~/Org")))
-
-;; Provide this file to init.el
-(provide 'org-mode)

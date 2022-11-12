@@ -35,9 +35,9 @@
         (convert-standard-filename "lisp/")))
 
 ;; Load the code of some external files
-(require 'interface)
-(require 'editor)
-(require 'org-mode)
-(require 'keybinds)
-(require 'performance)
+(load "interface")
+(load "editor")
+(load "org-mode")
+(load "keybinds")
+(load "performance")
 (load "language")
