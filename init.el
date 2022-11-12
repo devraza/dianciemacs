@@ -40,3 +40,4 @@
 (require 'org-mode)
 (require 'keybinds)
 (require 'performance)
+(load "language")
