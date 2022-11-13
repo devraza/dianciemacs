@@ -3,7 +3,7 @@
 ;; Quit input dialogues after pressing escape once
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
 
-;; Line Wrapping
+; Line Wrapping
 (global-visual-line-mode 1) ; Prevent wrapping of words
 
 ;; evil - A Vi Layer inside of Emacs
@@ -76,4 +76,3 @@
  "m" '(:wk "Magit")
  "w" '(:wk "Evil")
  "p" '(:wk "Projects"))
-
