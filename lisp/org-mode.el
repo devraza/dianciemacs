@@ -72,14 +72,8 @@
  "n r" '(org-roam-node-find :wk "Find Nodes")
  "n s" '(org-roam-db-sync :wk "Sync Nodes")
  "n c" '(org-todo :wk "Cycle Todo")
- "n l" '(org-latex-preview :wk "Preview Latex"))
-
-;; Agenda - manage your life with org-mode
-(general-create-definer diancite/org-agenda
-  :prefix leader-key)
-
-(diancite/org-agenda
- :keymaps 'normal
- "n a" '(org-agenda :wk "Agenda"))
+ "n l" '(org-latex-preview :wk "Preview Latex")
+ "n a" '(org-agenda :wk "Agenda")
+ "n t" '(org-table-align :wk "Align Table"))
 
 (setq org-agenda-files (quote ("~/Org")))
