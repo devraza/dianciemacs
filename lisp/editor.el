@@ -12,6 +12,7 @@
   (evil-want-keybinding nil) ; Make room for evil-collection
   (evil-want-integration t) ; Same as above
   (evil-undo-system 'undo-fu) ; Set the undo/redo system
+  (evil-respect-visual-line-mode t) ; Make evil respect line wrapping
   :config
   (evil-mode 1))
 
@@ -76,4 +77,3 @@
  "w" '(:wk "Evil")
  "p" '(:wk "Projects"))
 
-(set-face-foreground 'vertical-border (face-background 'default))
