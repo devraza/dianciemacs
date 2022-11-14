@@ -43,8 +43,8 @@
 ;; org-roam - A plain-text personal knowledge management system
 (use-package org-roam
   :custom
-  (org-directory file-truename "Org/") ; Set the folder used by org-mode
-  (org-roam-directory (file-truename "Org/Roam/")) ; Set the folder used by org-roam
+  (org-directory file-truename "~/Org/") ; Set the folder used by org-mode
+  (org-roam-directory (file-truename "~/Org/Roam/")) ; Set the folder used by org-roam
   :init
   (org-roam-db-autosync-mode 1)) ; Automatically sync nodes
 
