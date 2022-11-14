@@ -3,7 +3,8 @@
 ;; Markdown
 (use-package markdown-mode)
 
-(use-package flycheck)
+;; Diagnostics
+(use-package flymake)
 
 ;; eglot - Language Server Protocol ingegration
 (use-package eglot)

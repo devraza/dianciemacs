@@ -67,7 +67,7 @@
   (general-evil-setup t)
   :init
   (general-create-definer diancite/leaders
-			  :prefix leader-key))
+    :prefix leader-key))
 
 (diancite/leaders
  :keymaps 'normal
