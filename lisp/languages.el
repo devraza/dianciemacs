@@ -4,14 +4,17 @@
 (use-package markdown-mode)
 
 ;; Diagnostics
-(use-package flymake)
+(use-package flycheck)
 
 ;; eglot - Language Server Protocol ingegration
 (use-package eglot)
 
-;; Rust
-(use-package rustic
-  :custom
-  (rustic-lsp-client 'eglot)) ; Make eglot the default LSP client
+;; Go
+(use-package go-mode
+  :config
+  (add-hook 'before-save-hook 'gofmt-before-save) ; Format on save
+  :hook
+  (go-mode . flycheck-mode)) ; Enable flycheck-mode by default
 
+;; Autobrackets
 (add-hook 'prog-mode-hook 'electric-pair-mode)
