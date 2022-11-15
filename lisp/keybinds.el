@@ -32,5 +32,5 @@
  "l f" '(eglot-format :wk "Format Buffer")
 
  "l w" '(:wk "Server")
- "l w r" '('eglot-shutdown :wk "Restart Server")
- "l w q" '('eglot-reconnect :wk "Shutdown Server"))
+ "l w r" '(eglot-reconnect :wk "Restart Server")
+ "l w q" '(eglot-shutdown :wk "Shutdown Server"))
