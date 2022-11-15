@@ -16,5 +16,13 @@
   :hook
   (go-mode . flycheck-mode)) ; Enable flycheck-mode by default
 
+;; Rust
+(use-package rustic
+  :custom
+  (rustic-lsp-client 'eglot)) ; Make eglot the default LSP client
+
+;; Lua
+(use-package lua-mode)
+
 ;; Autobrackets
 (add-hook 'prog-mode-hook 'electric-pair-mode)
