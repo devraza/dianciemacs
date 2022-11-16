@@ -41,7 +41,6 @@
   (rustic-format-trigger 'on-save) ; Format buffer on save
   (rustic-lsp-client 'eglot)) ; Make eglot the default LSP client
 
-
 ;; Disable flymake for eglot - in favour of flycheck
 (add-hook 'eglot--managed-mode-hook (lambda () (flymake-mode -1)))
 
