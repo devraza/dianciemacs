@@ -23,6 +23,13 @@
   (set-face-foreground face (face-attribute 'default :background)))
 (set-face-background 'fringe (face-attribute 'default :background))
 
+;; Use the `orderless' completion mechanism
+(use-package orderless
+  :init
+  (setq completion-styles '(orderless basic)
+        completion-category-defaults nil
+        completion-category-overrides '((file (styles basic partial-completion)))))
+
 ;; magit - A beautiful git porcelain for Emacs
 (use-package magit)
 
