@@ -26,8 +26,8 @@
 (diancite/lsp
  :keymaps 'normal
  "l" '(:wk "LSP")
- "l n" '(flymake-goto-next-error :wk "Next Error")
- "l p" '(flymake-goto-prev-error :wk "Previous Error")
+ "l n" '(flycheck-next-error :wk "Next Error")
+ "l p" '(flycheck-previous-error :wk "Previous Error")
  "l f" '(eglot-format :wk "Format Buffer")
 
  "l w" '(:wk "Server")
