@@ -8,7 +8,6 @@
 ;;; Code:
 
 ;; Disable Emacs' GTK decorations. Done in this file otherwise done too late.
-(menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
