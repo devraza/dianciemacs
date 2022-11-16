@@ -1,4 +1,12 @@
-;; This file contains keybindings for Dianciemacs
+;;; lisp/keybinds.el --- Some default keybinds for Dianciemacs' -*- lexical-binding: t; -*-
+;;; Commentary:
+;;
+;; There's not much to say about this section.  Keybinds are a very important
+;; part of an editor's editing experience, and in Dianciemacs keys are bound to
+;; leader-key (SPC by default).  Changing the leader-key can be easily done by
+;; changing the `leader-key' constant in the `init.el' at the project root.
+;;
+;;; Code:
 
 ;; Files
 (general-create-definer diancite/file
@@ -33,3 +41,5 @@
  "l w" '(:wk "Server")
  "l w r" '(eglot-reconnect :wk "Restart Server")
  "l w q" '(eglot-shutdown :wk "Shutdown Server"))
+
+;;; keybinds.el ends here

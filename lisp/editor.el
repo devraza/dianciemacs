@@ -1,4 +1,11 @@
-;; This file customizes Emacs' editor
+;;; lisp/editor.el --- Default configration for Dianciemacs' editor -*- lexical-binding: t; -*-
+;;; Commentary:
+;;
+;; Emacs' default editing experience sucks a lot.  There's too much most people
+;; will never need and I personally believe modal keybinds to be superior.
+;; So, there's a lot changes Dianciemacs will be making to the editor, all of which can be seen in this file.
+;;
+;;; Code:
 
 ;; Quit input dialogues after pressing escape once
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
@@ -53,7 +60,8 @@
 
 ;; rainbow-mode - Colourful colour codes!
 (use-package rainbow-mode
-  :hook (prog-mode . rainbow-mode))
+  :hook
+  (prog-mode . rainbow-mode))
 
 ;; Keybinds
 ;; Enable which-key
@@ -76,3 +84,5 @@
  "m" '(:wk "Magit")
  "w" '(:wk "Evil")
  "p" '(:wk "Projects"))
+
+;;; editor.el ends here

@@ -1,3 +1,11 @@
+;;; lisp/languages.el --- Support for programming languages -*- lexical-binding: t; -*-
+;;; Commentary:
+;;
+;; Trivial changes done by almost everyone - no editor supports every language by default.
+;; You will probably be adding on to the stuff in this file - in the `user/' directory, of course.
+;;
+;;; Code:
+
 ;; This file contains configuration for languages
 
 ;; Markdown
@@ -40,3 +48,5 @@
 
 ;; Autobrackets
 (add-hook 'prog-mode-hook 'electric-pair-mode)
+
+;;; languages.el ends here

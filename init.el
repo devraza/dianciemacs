@@ -1,3 +1,12 @@
+;;; init.el --- Dianciemacs -*- lexical-binding: t; -*-
+;;; Commentary:
+;;
+;; This is a minimal and elegant Emacs configuration framework.
+;; This project aims to keep/make Emacs fast, aesthetic, and beginner-friendly.
+;; Maintained by devraza <thedevraza@proton.me>
+;;
+;;; Code:
+
 ;; Disable Emacs' GTK decorations. Done in this file otherwise done too late.
 (menu-bar-mode -1)
 (tool-bar-mode -1)
@@ -46,3 +55,5 @@
 (add-to-list 'load-path (concat user-emacs-directory
         (convert-standard-filename "user/")))
 (load "init")
+
+;;; init.el ends here

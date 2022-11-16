@@ -1,4 +1,12 @@
-;; This file contains configuration for Emacs interface elements.
+;;; lisp/interface.el --- Changes to Emacs' interface -*- lexical-binding: t; -*-
+;;; Commentary:
+;;
+;; Emacs has a little too much going on in it's interface by default - things
+;; like GTK dialog boxes for quitting, a scroll bar, a menu bar, etc. are all
+;; unnecessary for most users - so disabling that is done right in this file.
+;; Additionally, the default theme isn't very aesthetic, so that obviously needs to change too.
+;;
+;;; Code:
 
 ;; Stop Emacs from resizing the window at startup
 (setq frame-resize-pixelwise t)
@@ -57,3 +65,5 @@
 
 (use-package diredfl ; Colourise dired!
   :hook dired-mode)
+
+;;; interface.el ends here

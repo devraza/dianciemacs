@@ -1,4 +1,11 @@
-;; This file contains configuration for Emacs' org-mode
+;;; lisp/org-mode.el --- org-mode improvements for Emacs -*- lexical-binding: t; -*-
+;;; Commentary:
+;;
+;; A lot of people out there will agree wholeheartedly that org mode is great.
+;; Tons of fine-grained control, simplicity, and extensibilty - all built-in by
+;; default into a single tool that works beautifully with Emacs.
+;;
+;;; Code:
 
 ;; org-mode ;; org-superstar
 (use-package org-superstar
@@ -77,3 +84,5 @@
  "n t" '(org-table-align :wk "Align Table"))
 
 (setq org-agenda-files (quote ("~/Org")))
+
+;;; org-mode.el ends here
