@@ -17,8 +17,7 @@
  :keymaps 'normal
  "m s" '(magit-status :wk "Status")
  "m d" '(magit-dispatch :wk "Dispatch")
- "m f" '(magit-status :wk "File Dispatch"))
-
+ "m f" '(magit-file-dispatch :wk "File Dispatch"))
 
 ;; Flymake & LSP
 (general-create-definer diancite/lsp
