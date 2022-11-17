@@ -56,7 +56,7 @@
 (doom-themes-org-config) ; And org-mode
 
 ;; Set theme to doom-tokyo-night, Dianicemacs' default
-(load-theme 'doom-tokyo-night t)
+(load-theme 'graphite t)
 
 ;; rainbow-mode - Colourful colour codes!
 (use-package rainbow-mode

@@ -52,9 +52,6 @@
 (use-package kaolin-themes
   :requires autothemer)
 
-;; autothemer - conveniently create Emacs themes
-(use-package autothemer)
-
 ;; all-the-icons - Icons for various UI elements
 (use-package all-the-icons)
 
