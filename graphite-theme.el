@@ -5,7 +5,7 @@
  "A neon, shimmering theme for Emacs"
 
  ;; The color classes used by the theme. Theme supports GUI Emacs only.
- ((((class color) (min-colors #xFFFFFF))
+ ((((class color) (min-colors #xFFFFFF)))
   
   ;; Specify the color palette, color columns correspond to each of the classes above.
   (red "#781210")
@@ -18,6 +18,6 @@
  
  ;; Specifications for Emacs faces.
  ((default (:foreground cyan))
-  (error  (:foreground red)))))
+  (error  (:foreground red))))
     
 (provide-theme 'graphite)
