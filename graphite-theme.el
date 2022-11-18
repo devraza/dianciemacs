@@ -17,7 +17,7 @@
   (cyan "#50fcce"))
  
  ;; Specifications for Emacs faces.
- ((default (:foreground example-cyan))
-  (error  (:foreground example-red))))
+ ((default (:foreground cyan))
+  (error  (:foreground red)))))
     
 (provide-theme 'graphite)
