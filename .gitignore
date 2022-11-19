@@ -3,6 +3,7 @@ auto-save-list/
 straight/
 elpa/
 transient/
+user/
 
 bookmarks
 .last-package-update-day
