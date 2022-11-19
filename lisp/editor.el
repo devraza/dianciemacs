@@ -64,7 +64,7 @@
 (use-package autothemer)
 (use-package graphite-theme
   :straight (:package "graphite" :host github
-	     :repo "devraza/graphite-emacs"))
+		      :repo "devraza/graphite-emacs"))
 (load-theme 'graphite t)
 
 ;; rainbow-mode - Colourful colour codes!

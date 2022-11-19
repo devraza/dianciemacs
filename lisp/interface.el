@@ -38,6 +38,15 @@
         completion-category-defaults nil
         completion-category-overrides '((file (styles basic partial-completion)))))
 
+;; emacs-dashboard - An extensible Emacs dashboard
+(use-package dashboard
+  :init
+  (dashboard-setup-startup-hook)
+  :custom
+  (dashboard-banner-logo-title "Welcome to Dianciemacs!")
+  (dashboard-center-content t)
+  (dashboard-startup-banner (concat user-emacs-directory (convert-standard-filename "neon-crown.png"))))
+
 ;; magit - A beautiful git porcelain for Emacs
 (use-package magit)
 

@@ -6,6 +6,7 @@ transient/
 user/
 
 bookmarks
+recentf
 .last-package-update-day
 .lsp*
 org-roam.db*

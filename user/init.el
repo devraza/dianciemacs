@@ -7,4 +7,7 @@
 ;;
 ;;; Code:
 
+(add-to-list 'custom-theme-load-path "~/Projects/graphite-emacs")
+(load-theme 'graphite t)
+
 ;;; init.el ends here
