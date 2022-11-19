@@ -43,9 +43,9 @@
   :init
   (dashboard-setup-startup-hook)
   :custom
-  (dashboard-banner-logo-title "Welcome to Dianciemacs!")
+  (dashboard-banner-logo-title "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome to Dianciemacs!")
   (dashboard-center-content t)
-  (dashboard-startup-banner (concat user-emacs-directory (convert-standard-filename "neon-crown.png")))
+  (dashboard-startup-banner nil)
   (initial-buffer-choice (lambda () (get-buffer-create "*dashboard*"))))
 
 ;; magit - A beautiful git porcelain for Emacs
