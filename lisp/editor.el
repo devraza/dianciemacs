@@ -55,7 +55,11 @@
 (doom-themes-treemacs-config) ; Enable theming of treemacs
 (doom-themes-org-config) ; And org-mode
 
-;; Set theme to doom-tokyo-night, Dianicemacs' default
+;; Set theme to `graphite', Dianicemacs' default
+(use-package autothemer)
+(use-package graphite-theme
+  :straight (:package "graphite" :host nil
+	     :type git :repo "ssh://81.151.235.84/graphite-emacs"))
 (load-theme 'graphite t)
 
 ;; rainbow-mode - Colourful colour codes!
