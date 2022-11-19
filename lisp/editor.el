@@ -23,6 +23,11 @@
   :config
   (evil-mode 1))
 
+;; evil-commentary - Comment stuff out
+(use-package evil-commentary
+  :init
+  (evil-commentary-mode))
+
 ;; evil-collection - A collection of keybinds for evil
 (use-package evil-collection
   :custom (evil-collection-setup-minibuffer t)
@@ -58,8 +63,8 @@
 ;; Set theme to `graphite', Dianicemacs' default
 (use-package autothemer)
 (use-package graphite-theme
-  :straight (:package "graphite" :host nil
-	     :type git :repo "ssh://81.151.235.84/graphite-emacs"))
+  :straight (:package "graphite" :host github
+	     :repo "devraza/graphite-emacs"))
 (load-theme 'graphite t)
 
 ;; rainbow-mode - Colourful colour codes!
