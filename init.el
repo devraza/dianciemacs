@@ -7,6 +7,9 @@
 ;;
 ;;; Code:
 
+;; Increase the threshold - performance
+(setq gc-cons-threshold (* 50 1000 1000))
+
 ;; Disable Emacs' GTK decorations. Done in this file otherwise done too late.
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
@@ -47,7 +50,6 @@
 (load "editor")
 (load "org-mode")
 (load "keybinds")
-(load "performance")
 (load "languages")
 
 ;; Load user configuration
