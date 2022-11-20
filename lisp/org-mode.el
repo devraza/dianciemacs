@@ -9,23 +9,12 @@
 
 ;; org-mode ;; org-superstar
 (use-package org-superstar
+  :after org
   :custom
   ;; Change org-mode's heading bullets
   (org-superstar-headline-bullets-list
    '("🞉" "🞈" "🞇" "🞆" "🞅" "🞄"))
   :hook org-mode)
-
-;; Customize org-mode's default functionality
-(setq org-ellipsis "..."
-      org-use-property-inheritance t
-      org-list-allow-alphabetical t
-      org-catch-invisible-edits 'smart
-      org-startup-indented t
-      org-hide-emphasis-markers t
-      org-startup-with-inline-images t
-      org-image-actual-width '(300)
-      org-pretty-entities t
-      org-adapt-indentation t)
 
 (with-eval-after-load 'org-superstar
   ;; Faces for the font sizes of org-mode headings
@@ -43,6 +32,18 @@
                     :inherit 'org-level-8))
 
 (with-eval-after-load 'org
+  ;; Customize org-mode's default functionality
+  (setq org-ellipsis "..."
+	org-use-property-inheritance t
+	org-list-allow-alphabetical t
+	org-catch-invisible-edits 'smart
+	org-startup-indented t
+	org-hide-emphasis-markers t
+	org-startup-with-inline-images t
+	org-image-actual-width '(300)
+	org-pretty-entities t
+	org-adapt-indentation t)
+  
   (plist-put org-format-latex-options :scale 2.5) ; Scale up latex elements
   (setq org-directory "~/Org/") ; Set the folder used by org-mode
   (setq org-agenda-files (quote ("~/Org/")))
