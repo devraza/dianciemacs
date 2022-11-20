@@ -26,19 +26,20 @@
 ;; evil-commentary - Comment stuff out
 (use-package evil-commentary
   :after evil
-  :init
+  :config
   (evil-commentary-mode))
 
 ;; evil-surround - You will be surrounded
 (use-package evil-surround
   :after evil
-  :init
+  :config
   (global-evil-surround-mode))
 
 ;; evil-snipe - 2-char searching for evil-mode
 (use-package evil-snipe
   :after evil
-  :init
+  :config
+  (evil-snipe-mode 1)
   (evil-snipe-override-mode 1))
 
 ;; evil-collection - A collection of keybinds for evil
