@@ -6,12 +6,7 @@
 ;;
 ;;; Code:
 
-;; Reduce garbage collection at startup
-(setq gc-cons-threshold most-positive-fixnum)
-
-;; Lower threshold back to 8 MiB (default is 800kB)
-(add-hook 'emacs-startup-hook
-          (lambda ()
-            (setq gc-cons-threshold (expt 2 23))))
+;; Increase the threshold
+(setq gc-cons-threshold (* 50 1000 1000))
 
 ;;; performance.el ends here

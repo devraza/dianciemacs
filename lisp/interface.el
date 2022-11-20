@@ -22,8 +22,8 @@
 
 ;; Add a nice border around Emacs
 (modify-all-frames-parameters
- '((right-divider-width . 15)
-   (internal-border-width . 15)))
+ '((right-divider-width . 20)
+   (internal-border-width . 20)))
 (dolist (face '(window-divider
                 window-divider-first-pixel
                 window-divider-last-pixel))
@@ -31,8 +31,14 @@
   (set-face-foreground face (face-attribute 'default :background)))
 (set-face-background 'fringe (face-attribute 'default :background))
 
+;; vertico - An amazing search engine!
+(use-package vertico
+  :init
+  (vertico-mode 1))
+
 ;; Use the `orderless' completion mechanism
 (use-package orderless
+  :after vertico
   :init
   (setq completion-styles '(orderless basic)
         completion-category-defaults nil
@@ -52,23 +58,12 @@
 (use-package magit)
 
 ;; which-key - a popup which displays available keybindings
-(use-package which-key)
-
-;; Themes
-;; Install the Doom Emacs theme megapack.
-(use-package doom-themes)
-  
-;; kaolin-themes, depends on autothemer
-(use-package kaolin-themes
-  :requires autothemer)
-
-;; all-the-icons - Icons for various UI elements
-(use-package all-the-icons)
-
-;; vertico - An amazing search engine!
-(use-package vertico
+(use-package which-key
   :init
-  (vertico-mode 1))
+  (which-key-mode)
+  :custom
+  (which-key-idle-delay 0.1) ; Make the popup appear faster
+  (which-key-separator " - ")) ; Change the seperator which-key uses
 
 (use-package diredfl ; Colourise dired!
   :hook dired-mode)

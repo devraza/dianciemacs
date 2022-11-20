@@ -25,23 +25,39 @@
 
 ;; evil-commentary - Comment stuff out
 (use-package evil-commentary
+  :after evil
   :init
   (evil-commentary-mode))
 
+;; evil-surround - You will be surrounded
+(use-package evil-surround
+  :after evil
+  :init
+  (global-evil-surround-mode))
+
+;; evil-snipe - 2-char searching for evil-mode
+(use-package evil-snipe
+  :after evil
+  :init
+  (evil-snipe-override-mode 1))
+
 ;; evil-collection - A collection of keybinds for evil
 (use-package evil-collection
+  :after evil
   :custom (evil-collection-setup-minibuffer t)
   :init (evil-collection-init))
 
 ;; evil-escape - Escape from insert mode using jk
 (use-package evil-escape
+  :after evil
   :config
   (setq-default evil-escape-key-sequence "jk")
   :init
   (evil-escape-mode 1))
 
 ;; undo-fu, used by evil for undo/redo functionality
-(use-package undo-fu)
+(use-package undo-fu
+  :after evil)
 
 ;; Disable the creation of files ending with '~' (backup files)
 (setq make-backup-files nil)
@@ -52,13 +68,6 @@
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
-
-;; Themes
-;; Customize doom-themes
-(setq doom-themes-enable-bold t
-      doom-themes-enable-italic t)
-(doom-themes-treemacs-config) ; Enable theming of treemacs
-(doom-themes-org-config) ; And org-mode
 
 ;; Set theme to `graphite', Dianicemacs' default
 (use-package autothemer)
@@ -72,26 +81,22 @@
   :hook
   (prog-mode . rainbow-mode))
 
-;; Keybinds
-;; Enable which-key
-(which-key-mode)
-(setq which-key-idle-delay 0.1) ; Make the popup appear faster
-(setq which-key-separator " - " ) ; Change the seperator which-key uses
-
 ;; general - More convenient key definitions for Emacs
 (use-package general
+  :after evil
   :config
   (general-evil-setup t)
   :init
   (general-create-definer diancite/leaders
     :prefix leader-key))
 
-(diancite/leaders
- :keymaps 'normal
- "f" '(:wk "File")
- "n" '(:wk "Org")
- "m" '(:wk "Magit")
- "w" '(:wk "Evil")
- "p" '(:wk "Projects"))
-
+(with-eval-after-load 'general
+  (diancite/leaders
+    :keymaps 'normal
+    "f" '(:wk "File")
+    "n" '(:wk "Org")
+    "m" '(:wk "Magit")
+    "w" '(:wk "Evil")
+    "p" '(:wk "Projects")))
+  
 ;;; editor.el ends here
