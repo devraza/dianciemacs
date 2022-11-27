@@ -13,7 +13,7 @@ Dianciemacs requires the following prerequisits to be installed or run:
 
 ## Installation
 
-To install Dianciemacs, first clone the repository to your appropriate Emacs directory - `~/.emacs.d` generally for Linux and macOS.
+To install Dianciemacs, first clone the repository to your appropriate Emacs directory - generally `~/.emacs.d` for Linux and macOS.
 
 ```
 git clone https://github.com/devraza/dianciemacs ~/.emacs.d
