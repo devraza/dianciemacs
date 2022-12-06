@@ -8,6 +8,9 @@
 
 ;; This file contains configuration for languages
 
+;; justfile
+(use-package just-mode)
+
 ;; Markdown
 (use-package markdown-mode)
 
