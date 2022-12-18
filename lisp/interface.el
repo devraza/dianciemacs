@@ -22,8 +22,8 @@
 
 ;; Add a nice border around Emacs
 (modify-all-frames-parameters
- '((right-divider-width . 30)
-   (internal-border-width . 30)))
+ '((right-divider-width . 15)
+   (internal-border-width . 15)))
 (dolist (face '(window-divider
                 window-divider-first-pixel
                 window-divider-last-pixel))
@@ -43,16 +43,6 @@
   (setq completion-styles '(orderless basic)
         completion-category-defaults nil
         completion-category-overrides '((file (styles basic partial-completion)))))
-
-;; emacs-dashboard - An extensible Emacs dashboard
-(use-package dashboard
-  :init
-  (dashboard-setup-startup-hook)
-  :custom
-  (dashboard-banner-logo-title "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome to Dianciemacs!")
-  (dashboard-center-content t)
-  (dashboard-startup-banner nil)
-  (initial-buffer-choice (lambda () (get-buffer-create "*dashboard*"))))
 
 ;; magit - A beautiful git porcelain for Emacs
 (use-package magit)
