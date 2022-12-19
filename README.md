@@ -33,10 +33,9 @@ This project will definitely undergo several (possibly **breaking**) changes as 
 
 The following list contains the features which are yet to be implemented:
 
-- Dashboard with icon
 - Configuration macros (such as `package!` or `hook!`)
 - Command-line tool to manage configuration
-- User configuration in a user directory (something like `~/.diancite.d`)
+- X User configuration in a user directory - `user/`
 
 ## Contribution
 
