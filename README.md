@@ -33,9 +33,9 @@ This project will definitely undergo several (possibly **breaking**) changes as 
 
 The following list contains the features which are yet to be implemented:
 
-- Configuration macros (such as `package!` or `hook!`)
-- Command-line tool to manage configuration
-- X User configuration in a user directory - `user/`
+- [ ] Configuration macros (such as `package!` or `hook!`)
+- [ ] Command-line tool to manage configuration
+- [X] User configuration in a user directory - `user/`
 
 ## Contribution
 
