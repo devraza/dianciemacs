@@ -48,7 +48,6 @@
   (setq org-directory "~/Org/") ; Set the folder used by org-mode
   (setq org-agenda-files (quote ("~/Org/")))
   (setq org-roam-directory "~/Org/Roam/")) ; Set the folder used by org-roam
-
 ;; org-roam - A plain-text personal knowledge management system
 (use-package org-roam
   :init
@@ -73,11 +72,14 @@
   (general-create-definer diancite/org :prefix leader-key)
   (diancite/org
     :keymaps 'normal
-    "n r" '(org-roam-node-find :wk "Find Nodes")
+    "n f" '(org-roam-node-find :wk "Find Nodes")
     "n s" '(org-roam-db-sync :wk "Sync Nodes")
     "n c" '(org-todo :wk "Cycle Todo")
     "n l" '(org-latex-preview :wk "Preview Latex")
     "n a" '(org-agenda :wk "Agenda")
-    "n t" '(org-table-align :wk "Align Table")))
+    "n i" '(org-insert-link :wk "Insert Link")
+    "n t" '(:wk "Tables")
+    "n t a" '(org-table-align :wk "Align Table")
+    "n t c" '(org-table-create :wk "Create Table"))
 
 ;;; org-mode.el ends here
