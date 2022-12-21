@@ -80,6 +80,6 @@
     "n i" '(org-insert-link :wk "Insert Link")
     "n t" '(:wk "Tables")
     "n t a" '(org-table-align :wk "Align Table")
-    "n t c" '(org-table-create :wk "Create Table"))
+    "n t c" '(org-table-create :wk "Create Table")))
 
 ;;; org-mode.el ends here
