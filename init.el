@@ -42,7 +42,7 @@
 (setq use-package-always-ensure t)
 
 ;; Disable unnecessary warnings
-;; (setq warning-minimum-level :emergency)
+(setq warning-minimum-level :emergency)
 
 ;; Add external e-lisp files to the load-path
 (add-to-list 'load-path (concat user-emacs-directory
