@@ -15,10 +15,10 @@
 (use-package markdown-mode)
 
 ;; Diagnostics
-(use-package flycheck-rust
-  :after flycheck
-  :init
-  (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)) ; Enable flycheck-rust where flycheck is enabled. If not a rust file, does nothing.
+;; (use-package flycheck-rust
+;;   :after flycheck
+;;   :init
+;;   (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)) ; Enable flycheck-rust where flycheck is enabled. If not a rust file, does nothing.
   
 (use-package flycheck-inline
   :after flycheck
@@ -40,10 +40,13 @@
   (add-hook 'before-save-hook 'gofmt-before-save)) ; Format on save
 
 ;; Rust
-(use-package rustic
+(use-package rust-mode
+  :config
+  (add-hook 'rust-mode-hook
+            (lambda () (prettify-symbols-mode))) ; Prettify code automatically
+  (add-hook 'rust-mode-hook 'eglot-ensure) ; Enable eglot compatibility
   :custom
-  (rustic-format-trigger 'on-save) ; Format buffer on save
-  (rustic-lsp-client 'eglot)) ; Make eglot the default LSP client
+  (rust-format-on-save t)) ; Format on save
 
 ;; Disable flymake for eglot - in favour of flycheck
 (add-hook 'eglot--managed-mode-hook (lambda () (flymake-mode -1)))
