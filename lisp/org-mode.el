@@ -16,20 +16,26 @@
    '("🞉" "🞈" "🞇" "🞆" "🞅" "🞄"))
   :hook org-mode)
 
-(with-eval-after-load 'org-superstar
+;; Prevent the usage of automatic <> delimiters in org mode (conflict with snippets)
+(add-hook 'org-mode-hook (lambda ()
+           (setq-local electric-pair-inhibit-predicate
+                   `(lambda (c)
+                  (if (char-equal c ?<) t (,electric-pair-inhibit-predicate c))))))
+
+(with-eval-after-load 'org
   ;; Faces for the font sizes of org-mode headings
-  (set-face-attribute 'org-level-8 nil :weight 'bold :inherit 'default)
-  (set-face-attribute 'org-level-7 nil :inherit 'org-level-8)
-  (set-face-attribute 'org-level-6 nil :inherit 'org-level-8)
-  (set-face-attribute 'org-level-5 nil :inherit 'org-level-8)
-  (set-face-attribute 'org-level-4 nil :inherit 'org-level-8)
-  (set-face-attribute 'org-level-3 nil :inherit 'org-level-8 :height 1.15)
-  (set-face-attribute 'org-level-2 nil :inherit 'org-level-8 :height 1.35)
-  (set-face-attribute 'org-level-1 nil :inherit 'org-level-8 :height 1.65)
+  (set-face-attribute 'org-level-8 nil :weight 'bold)
+  (set-face-attribute 'org-level-7 nil :weight 'bold)
+  (set-face-attribute 'org-level-6 nil :weight 'bold)
+  (set-face-attribute 'org-level-5 nil :weight 'bold :height 1.1)
+  (set-face-attribute 'org-level-4 nil :weight 'bold :height 1.2)
+  (set-face-attribute 'org-level-3 nil :weight 'bold :height 1.3)
+  (set-face-attribute 'org-level-2 nil :weight 'bold :height 1.4)
+  (set-face-attribute 'org-level-1 nil :weight 'bold :height 1.5)
   (set-face-attribute 'org-document-title nil
-                    :height 1.85
+                    :height 1.65
                     :foreground 'unspecified
-                    :inherit 'org-level-8))
+                    :weight 'bold))
 
 (with-eval-after-load 'org
   ;; Customize org-mode's default functionality
@@ -43,8 +49,8 @@
 	org-image-actual-width '(300)
 	org-pretty-entities t
 	org-adapt-indentation t)
-  
-  (plist-put org-format-latex-options :scale 2.5) ; Scale up latex elements
+
+  ;; (plist-put org-format-latex-options :scale 2.5) ; Scale up latex elements (HiDPI)
   (setq org-directory "~/Org/") ; Set the folder used by org-mode
   (setq org-agenda-files (quote ("~/Org/")))
   (setq org-roam-directory "~/Org/Roam/")) ; Set the folder used by org-roam

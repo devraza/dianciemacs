@@ -10,6 +10,12 @@
 ;; Increase the threshold - performance
 (setq gc-cons-threshold (* 50 1000 1000))
 
+;; Set the font
+(add-to-list 'default-frame-alist
+             '(font . "Iosevka SS12-11"))
+(set-face-attribute 'default nil :family "Iosevka")
+(set-face-attribute 'variable-pitch nil :family "Iosevka")
+
 ;; Disable Emacs' GTK decorations. Done in this file otherwise done too late.
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
@@ -19,6 +25,9 @@
 
 ;; Define the leader-key to use.
 (defconst leader-key "SPC")
+
+;; Emacs 30 with straight.el
+(setq straight-repository-branch "develop")
 
 ;; Straight.el bootstrap
 (defvar bootstrap-version)
