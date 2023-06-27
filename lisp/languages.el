@@ -20,16 +20,16 @@
 ;;   :init
 ;;   (add-hook 'flycheck-mode-hook #'flycheck-rust-setup)) ; Enable flycheck-rust where flycheck is enabled. If not a rust file, does nothing.
   
-(use-package flycheck-inline
-  :after flycheck
-  :hook
-  (flycheck-mode . flycheck-inline-mode)) ; Enable flycheck-inline where flycheck is enabled
+;; (use-package flycheck-inline
+;;   :after flycheck
+;;   :hook
+;;   (flycheck-mode . flycheck-inline-mode)) ; Enable flycheck-inline where flycheck is enabled
 
-(use-package flycheck
-  :hook prog-mode
-  :init
-  (with-eval-after-load 'flycheck
-    (push 'rustic-clippy flycheck-checkers))) ; Use clippy for Rust
+;; (use-package flycheck
+;;   :hook prog-mode
+;;   :init
+;;   (with-eval-after-load 'flycheck
+;;     (push 'rustic-clippy flycheck-checkers))) ; Use clippy for Rust
 
 ;; eglot - Language Server Protocol ingegration
 (use-package eglot)
@@ -49,7 +49,7 @@
   (rust-format-on-save t)) ; Format on save
 
 ;; Disable flymake for eglot - in favour of flycheck
-(add-hook 'eglot--managed-mode-hook (lambda () (flymake-mode -1)))
+;; (add-hook 'eglot--managed-mode-hook (lambda () (flymake-mode -1)))
 
 ;; Lua
 (use-package lua-mode)

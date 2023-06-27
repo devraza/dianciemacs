@@ -7,4 +7,7 @@
 ;;
 ;;; Code:
 
+(add-to-list 'custom-theme-load-path "~/Projects/hazakura-emacs")
+(load-theme 'hazakura t)
+
 ;;; init.el ends here

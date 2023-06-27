@@ -7,14 +7,11 @@
 ;;
 ;;; Code:
 
-;; org-mode ;; org-superstar
-(use-package org-superstar
-  :after org
-  :custom
-  ;; Change org-mode's heading bullets
-  (org-superstar-headline-bullets-list
-   '("🞉" "🞈" "🞇" "🞆" "🞅" "🞄"))
-  :hook org-mode)
+;; org-mode ;; org-modern
+;; Option 2: Globally
+(use-package org-modern
+  :after org)
+(with-eval-after-load 'org (global-org-modern-mode))
 
 ;; Prevent the usage of automatic <> delimiters in org mode (conflict with snippets)
 (add-hook 'org-mode-hook (lambda ()
@@ -27,11 +24,11 @@
   (set-face-attribute 'org-level-8 nil :weight 'bold)
   (set-face-attribute 'org-level-7 nil :weight 'bold)
   (set-face-attribute 'org-level-6 nil :weight 'bold)
-  (set-face-attribute 'org-level-5 nil :weight 'bold :height 1.1)
-  (set-face-attribute 'org-level-4 nil :weight 'bold :height 1.2)
-  (set-face-attribute 'org-level-3 nil :weight 'bold :height 1.3)
-  (set-face-attribute 'org-level-2 nil :weight 'bold :height 1.4)
-  (set-face-attribute 'org-level-1 nil :weight 'bold :height 1.5)
+  (set-face-attribute 'org-level-5 nil :weight 'bold)
+  (set-face-attribute 'org-level-4 nil :weight 'bold)
+  (set-face-attribute 'org-level-3 nil :weight 'bold)
+  (set-face-attribute 'org-level-2 nil :weight 'bold :height 1.05)
+  (set-face-attribute 'org-level-1 nil :weight 'bold :height 1.15)
   (set-face-attribute 'org-document-title nil
                     :height 1.65
                     :foreground 'unspecified
