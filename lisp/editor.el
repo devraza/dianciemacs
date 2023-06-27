@@ -14,13 +14,13 @@
 (global-visual-line-mode 1) ; Prevent wrapping of words
 
 ;; yasnippet - A template system for Emacs
-(use-package yasnippet
-  :config
-  (yas-reload-all)
-  (yas-global-mode))
+;; (use-package yasnippet
+;;   :config
+;;   (yas-reload-all)
+;;   (yas-global-mode))
 ;; yasnippet-snippets - A snippet collection package by AndreaCotti
-(use-package yasnippet-snippets
-  :after yasnippet)
+;; (use-package yasnippet-snippets
+;;   :after yasnippet)
 
 ;; evil - A Vi Layer inside of Emacs
 (use-package evil
