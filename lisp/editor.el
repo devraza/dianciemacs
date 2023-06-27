@@ -79,12 +79,12 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
-;; Set theme to `graphite', Dianicemacs' default
+;; Set theme to `hazakura', Dianicemacs' default
 (use-package autothemer)
-(use-package graphite-theme
-  :straight (:package "graphite" :host github
-		      :repo "devraza/graphite-emacs"))
-(load-theme 'graphite t)
+(use-package hazakura-theme
+  :straight (:package "hazakura" :host github
+		      :repo "devraza/hazakura-emacs"))
+(load-theme 'hazakura t)
 
 ;; rainbow-mode - Colourful colour codes!
 (use-package rainbow-mode
