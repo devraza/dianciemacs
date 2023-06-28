@@ -26,9 +26,9 @@
   (set-face-attribute 'org-level-6 nil :weight 'bold)
   (set-face-attribute 'org-level-5 nil :weight 'bold)
   (set-face-attribute 'org-level-4 nil :weight 'bold)
-  (set-face-attribute 'org-level-3 nil :weight 'bold)
-  (set-face-attribute 'org-level-2 nil :weight 'bold :height 1.05)
-  (set-face-attribute 'org-level-1 nil :weight 'bold :height 1.15)
+  (set-face-attribute 'org-level-3 nil :weight 'bold :height 1.05)
+  (set-face-attribute 'org-level-2 nil :weight 'bold :height 1.1)
+  (set-face-attribute 'org-level-1 nil :weight 'bold :height 1.2)
   (set-face-attribute 'org-document-title nil
                     :height 1.65
                     :foreground 'unspecified
