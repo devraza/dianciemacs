@@ -20,6 +20,10 @@
 ;; Enable line numbers globally
 (global-display-line-numbers-mode 1)
 
+;; Modeline
+(use-package nano-modeline)
+(add-hook 'prog-mode-hook #'nano-modeline-prog-mode)
+
 ;; Add a nice border around Emacs
 (modify-all-frames-parameters
  '((right-divider-width . 15)
