@@ -34,12 +34,13 @@
 (modify-all-frames-parameters
  '((right-divider-width . 15)
    (internal-border-width . 15)))
-(dolist (face '(window-divider
-                window-divider-first-pixel
-                window-divider-last-pixel))
-  (face-spec-reset-face face)
-  (set-face-foreground face (face-attribute 'default :background)))
-(set-face-background 'fringe (face-attribute 'default :background))
+
+;; Set theme to `hazakura', Dianicemacs' default
+(use-package autothemer)
+(use-package hazakura-theme
+  :straight (:package "hazakura" :host github
+		      :repo "devraza/hazakura-emacs"))
+(load-theme 'hazakura t)
 
 ;; vertico - An amazing search engine!
 (use-package vertico
