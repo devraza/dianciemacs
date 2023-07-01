@@ -88,9 +88,12 @@
 (load-theme 'hazakura t)
 
 ;; rainbow-mode - Colourful colour codes!
-(use-package rainbow-mode
-  :hook
-  (prog-mode . rainbow-mode))
+(use-package rainbow-mode)
+;; Enable rainbow-mode globally
+(with-eval-after-load 'rainbow-mode
+  (define-globalized-minor-mode global-rainbow-mode rainbow-mode
+    (lambda () (rainbow-mode 1)))
+  (global-rainbow-mode 1))
 
 ;; general - More convenient key definitions for Emacs
 (use-package general
