@@ -7,6 +7,8 @@ The current default theme used is a custom theme called [hazakura](https://githu
 
 Internal modules such as keybinds, macros, etc. are named with `diancite` for simplicity and readability.
 
+![An image of Dianciemacs](screenshot.png)
+
 ## Prerequisites
 
 Dianciemacs requires the following prerequisits to be installed or run:
