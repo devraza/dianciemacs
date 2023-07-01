@@ -3,7 +3,7 @@
 ;;
 ;; This is a minimal and elegant Emacs configuration framework.
 ;; This project aims to keep/make Emacs fast, aesthetic, and beginner-friendly.
-;; Maintained by devraza <thedevraza@proton.me>
+;; Maintained by devraza <devraza@outlook.com>
 ;;
 ;;; Code:
 
