@@ -18,11 +18,17 @@
 (setq use-dialog-box nil)
 
 ;; Enable line numbers globally
-(global-display-line-numbers-mode 1)
+(setq display-line-numbers 'relative)
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)
 
 ;; Modeline
 (use-package nano-modeline)
 (add-hook 'prog-mode-hook #'nano-modeline-prog-mode)
+(add-hook 'org-mode-hook #'nano-modeline-org-mode)
+
+;; Window dividers + fringe
+(set-fringe-mode 0)
+(window-divider-mode 1)
 
 ;; Add a nice border around Emacs
 (modify-all-frames-parameters
