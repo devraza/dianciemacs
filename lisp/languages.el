@@ -39,6 +39,13 @@
   :config
   (add-hook 'before-save-hook 'gofmt-before-save)) ; Format on save
 
+;; 4-space wide Go indentation
+(add-hook 'go-mode-hook
+          (lambda ()
+            (add-hook 'before-save-hook 'gofmt-before-save)
+            (setq tab-width 4)
+            (setq indent-tabs-mode 1)))
+
 ;; Rust
 (use-package rust-mode
   :config
