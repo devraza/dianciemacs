@@ -1,5 +1,7 @@
 # Dianciemacs
 
+> Project deprecated as part of my move to self-sustainability, and as I no longer use Emacs. I've moved to Neovim, and you'll be able to see my config soon.
+
 Dianciemacs is a minimal and elegant Emacs distribution for those who prefer simplicity and aesthetics.
 
 The current default theme used is a custom theme called [hazakura](https://github.com/devraza/hazakura-emacs).
