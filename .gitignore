@@ -3,7 +3,6 @@ auto-save-list/
 straight/
 elpa/
 transient/
-user/*
 
 bookmarks
 recentf
