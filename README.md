@@ -2,7 +2,7 @@
 
 Dianciemacs is a minimal and elegant Emacs distribution for those who prefer simplicity and aesthetics.
 
-The current default theme used is a custom theme called [hazakura](https://github.com/devraza/hazakura-emacs).
+The current default theme used is a custom theme called `hazakura` (on this server).
 > The interface has been designed to work with this theme, so be careful when making changes!
 
 Internal modules such as keybinds, macros, etc. are named with `diancite` for simplicity and readability.
