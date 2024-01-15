@@ -4,10 +4,6 @@ straight/
 elpa/
 transient/
 
-user/init.el
-user/
-user/*
-
 bookmarks
 recentf
 .last-package-update-day
