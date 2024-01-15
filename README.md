@@ -21,7 +21,7 @@ Dianciemacs requires the following prerequisits to be installed or run:
 To install Dianciemacs, first clone the repository to your appropriate Emacs directory - generally `~/.emacs.d` for Linux and macOS - alternatively, `$XDG_CONFIG_HOME/emacs` may also be used (typically `~/.config/emacs`)
 
 ```
-git clone https://github.com/devraza/dianciemacs ~/.emacs.d
+git clone https://git.devraza.duckdns.org/devraza/dianciemacs.git ~/.config/emacs
 ```
 
 ## Configuration
