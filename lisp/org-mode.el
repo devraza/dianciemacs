@@ -45,12 +45,8 @@
 	org-startup-with-inline-images t
 	org-image-actual-width '(300)
 	org-pretty-entities t
-	org-adapt-indentation t)
+	org-adapt-indentation t))
 
-  ;; (plist-put org-format-latex-options :scale 2.5) ; Scale up latex elements (HiDPI)
-  (setq org-directory "~/Org/") ; Set the folder used by org-mode
-  (setq org-agenda-files (quote ("~/Org/")))
-  (setq org-roam-directory "~/Org/Roam/")) ; Set the folder used by org-roam
 ;; org-roam - A plain-text personal knowledge management system
 (use-package org-roam
   :init
@@ -58,7 +54,7 @@
   (setq org-roam-capture-templates
       '(("d" "default" plain
          "\n%?"
-        :if-new (file+head "${slug}.org" "#+title: ${title}\n#+date: %U\n#+author: %n\n")
+        :if-new (file+head "${slug}.org" "#+title: ${title}\n#+date: %U\n")
         :unnarrowed t)))) ; Automatically sync nodes
 
 ;; Keybinds for org-mode
