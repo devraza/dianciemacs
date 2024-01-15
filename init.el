@@ -58,17 +58,17 @@
 		      :repo "devraza/hazakura-emacs"))
 (load-theme 'hazakura t)
 
+;; Load user configuration
+(add-to-list 'load-path (concat user-emacs-directory
+				(convert-standard-filename "../diancite/")))
+(load "init")
+
 ;; Load the code of some external files
 (load "interface")
 (load "editor")
 (load "org-mode")
 (load "keybinds")
 (load "languages")
-
-;; Load user configuration
-(add-to-list 'load-path (concat user-emacs-directory
-				(convert-standard-filename "../diancite/")))
-(load "init")
 
 ;; Make gc pauses faster by decreasing the threshold.
 (setq gc-cons-threshold (* 2 1000 1000))
