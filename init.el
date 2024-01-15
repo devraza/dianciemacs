@@ -23,6 +23,9 @@
 ;; Emacs 30 with straight.el
 (setq straight-repository-branch "develop")
 
+;; Ignore warnings
+(setq warning-minimum-level :error)
+
 ;; Straight.el bootstrap
 (defvar bootstrap-version)
 (let ((bootstrap-file
