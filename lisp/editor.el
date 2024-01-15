@@ -80,12 +80,12 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
-;; Set theme to `hazakura', Dianicemacs' default
+;; Set theme to `kagayaki', Dianicemacs' default
 (use-package autothemer)
-(use-package hazakura-theme
-  :straight (:package "hazakura" :host github
-		      :repo "devraza/hazakura-emacs"))
-(load-theme 'hazakura t)
+(use-package kagayaki-theme
+  :straight (:package "kagayaki" :host github
+		      :repo "devraza/kagayaki-emacs"))
+(load-theme 'kagayaki t)
 
 ;; rainbow-mode - Colourful colour codes!
 (use-package rainbow-mode)
