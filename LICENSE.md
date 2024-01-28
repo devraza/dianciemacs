@@ -1,6 +1,6 @@
 # The MIT License (MIT)
 
-Copyright © 2022-2023 Muhammad Nauman Raza
+Copyright © 2022-2024 Muhammad Nauman Raza
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
