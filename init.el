@@ -51,13 +51,6 @@
 (add-to-list 'load-path (concat user-emacs-directory
 				(convert-standard-filename "lisp/")))
 
-;; Set theme to `hazakura', Dianicemacs' default
-(use-package autothemer)
-(use-package hazakura-theme
-  :straight (:package "hazakura" :host github
-		      :repo "devraza/hazakura-emacs"))
-(load-theme 'hazakura t)
-
 ;; Load user configuration
 (add-to-list 'load-path (concat user-emacs-directory
 				(convert-standard-filename "../diancite/")))

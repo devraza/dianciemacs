@@ -35,13 +35,6 @@
  '((right-divider-width . 15)
    (internal-border-width . 15)))
 
-;; Set theme to `hazakura', Dianicemacs' default
-(use-package autothemer)
-(use-package hazakura-theme
-  :straight (:package "hazakura" :host github
-		      :repo "devraza/hazakura-emacs"))
-(load-theme 'hazakura t)
-
 ;; vertico - An amazing search engine!
 (use-package vertico
   :init
