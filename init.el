@@ -54,7 +54,6 @@
 ;; Load user configuration
 (add-to-list 'load-path (concat user-emacs-directory
 				(convert-standard-filename "../diancite/")))
-(load "init")
 
 ;; Load the code of some external files
 (load "interface")
